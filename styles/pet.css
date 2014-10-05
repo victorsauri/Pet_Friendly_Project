@@ -1,0 +1,413 @@
+/*********************
+VERTICAL ALIGN MIDDLE
+*********************/
+.valign {
+  /* Internet Explorer 10 */
+  display:-ms-flexbox;
+  -ms-flex-pack:center;
+  -ms-flex-align:center;
+
+  /* Firefox */
+  display:-moz-box;
+  -moz-box-pack:center;
+  -moz-box-align:center;
+
+  /* Safari, Opera, and Chrome */
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+
+  /* W3C */
+  display:box;
+  box-pack:center;
+  box-align:center;
+}
+
+/****************
+ GENERAL STYLE
+****************/
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #d5d3c5;
+  font-family: helvetica,arial,sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  color:#ffffff;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.container article {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+/****************
+  HEADER STYLE
+****************/
+ header {
+  background-color: #86BAAF;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+ }
+
+.logo {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.description {
+  display: inline-block;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.description p {
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.description img {
+  text-align: left;
+  width: 70px;
+  padding-top: 60px;
+}
+
+/************************
+  NAVBAR STYLE
+ ***********************/
+nav {
+  position: fixed;
+  line-height: 30px;
+  right: 40px;
+  top: 50%;
+  margin-top: -90px;
+  text-align: right;
+  z-index: 3;
+}
+
+nav ul{
+  font-family: 'ptserif',Arial,sans-serif;
+  list-style: none;
+}
+nav li {
+  position: relative;
+  display: block;
+  width: 8px;
+  height: 9px;
+  margin-bottom: 20px;
+}
+
+.icon_menu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  font-size: 12px;
+  color: rgba(0,0,0,0.7);
+  margin-left: 8px;
+}
+
+.icon_menu_hover {
+  color: #17544e;
+}
+
+.text_menu {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 17px;
+  width: 92px;
+  height: 29px;
+  font-size: 10px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  background: url(../images/shadow.png) 0 -18px no-repeat;
+  letter-spacing: 1px;
+}
+.text_menu_display {
+  display: block !important;
+}
+
+/************************
+  SECTION PROBLEM STYLE
+ ***********************/
+
+#problem{
+  font-size: 17px;
+  background-color: white;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  line-height: 30px;
+ }
+
+.text_left  {
+  margin-top: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+  .text_left p  {
+  margin-top: 20px;
+  text-align: center;
+}
+#problem img {
+  width: 100%;
+  max-width: 430px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/************************
+  SECTION APP STYLE
+ ***********************/
+
+#app {
+  background-color: #d5d3c5;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+ }
+
+#app img {
+  height: 100%;
+}
+.image_phone{
+  height: 50% !important;
+  float: left;
+}
+
+#app_text {
+  font-size: 18px;
+  float: left;
+  margin-top: 188px;
+    vertical-align: middle;
+    height: 50%;
+}
+#app_text p {
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+#platform_app {
+  margin-top: 20px;
+}
+
+/****************
+  SECTION MAP STYLE
+ ****************/
+ #map{
+  width: 100%;
+  background-color: #d5d3c5;
+  height: 50%;
+ }
+/****************
+  SECTION FORM STYLE
+ ****************/
+#form {
+  background-color: #a3ad9b;
+  width: 100%;
+  height: 50%;
+}
+
+.container input {
+  width: 50%;
+  max-width: 400px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 6px 0 0 6px;
+  background-color: white;
+  font-size: 15px;
+  color: #303030;
+  padding: 2px 20px 0;
+  border:0px solid transparent;
+}
+
+button{
+  background-color: #303030;
+  text-transform: uppercase;
+  border-radius: 0 6px 6px 0;
+  font-size: 15px;
+  color: white;
+  padding: 2 0 0;
+  width: 20%;
+  max-width:150px;
+  margin-top: 20px;
+  margin-left: -4px;
+  height: 50px;
+  box-shadow: none;
+  border:0px solid transparent;
+}
+
+#form_sent {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #a3ad9b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#form_sent img {
+  max-width: 180px;
+  margin-top: 30px;
+}
+
+/****************
+  SECTION OPINIONS STYLE
+ ****************/
+#opinions {
+  background: #ffe9be;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+#opinions article {
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+#opinions p {
+  font-size: 15px;
+}
+
+#opinions img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+
+/****************
+  FOOTER STYLE
+ ****************/
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #303030;
+  bottom: 0;
+  position: fixed;
+  padding: 10px 15px;
+  color: #BEBEBE;
+}
+
+.menu_footer li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.menu_footer {
+  float: right;
+}
+
+/***************
+MEDIA QUERIES
+***************/
+
+@media only screen and (max-width: 1005px) {
+  #intro, #problem, #app, #form, #opinions {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .description {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -50px;
+  }
+  .text_left h3 {
+    text-align: center;
+  }
+  .image_phone {
+    float: none;
+    margin-top: -200px;
+  }
+  #app {
+    margin-top: 50px;
+  }
+  #app_text {
+    margin: 10px auto;
+    float: none;
+  }
+  #opinions {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  #opinions h4 {
+    padding-top: 0px;
+  }
+  #second_opinion {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pet friendly</title>
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<!-- STYLE FILES -->
+		<link rel="stylesheet" type="text/css" href="./styles/pet.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>
+					<span id="text_intro" class="text_menu">Intro</span>
+					<a id="link_intro" class="fa fa-circle icon_menu" href="#intro"></a>
+				</li>
+				<li>
+					<span id="text_problem" class="text_menu">Problem</span>
+					<a id="link_problem" class="fa fa-circle-o icon_menu" href="#problem"></a>
+				</li>
+				<li>
+					<span id="text_app" class="text_menu">App</span>
+					<a id="link_app" class="fa fa-circle-o icon_menu" href="#app"></a>
+				</li>
+				<li>
+					<span id="text_map" class="text_menu">Map</span>
+					<a id="link_map" class="fa fa-circle-o icon_menu" href="#map"></a>
+				</li>
+				<li>
+					<span id="text_form" class="text_menu">Form</span>
+					<a id="link_form" class="fa fa-circle-o icon_menu" href="#form"></a>
+				</li>
+				<li>
+					<span id="text_opinions" class="text_menu">Opinions</span>
+					<a id="link_opinions" class="fa fa-circle-o icon_menu" href="#opinions"></a>
+				</li>
+			</ul>
+		</nav>
+		<header id="intro" class="valign">
+			<div class="container">
+				<div class="logo">
+					<img src="./images/logo_pet_friendly_test.png" alt="Pet Friendly Logo">
+				</div>
+				<div class="description">
+					<h2>Tired of leaving your dog behind? </h2>
+					<p>A new platform to discover those places ready to welcome you with your very best friend…your Dog!</p>
+					<img src="./images/arrow.png">
+				</div>
+
+			</div>
+		</header>
+		<section id="problem" class="valign">
+			<div class="container">
+				<article class="text_left">
+					<h3>Dogs not allowed</h3>
+					<p>Your are going for a walk with your dog and suddenly you found that unique French-decorated bar that plays cool music inside. You start to open the door when you realize that you cannot enter because of your companion. </br>How can this situation be solved?</p>
+				</article>
+				<article>
+					<img src="./images/cartel.png" alt="Sad dog">
+				</article>
+			</div>
+		</section>
+		<section id="app">
+			<div class="container">
+				<article class="image_phone">
+					<img src="./images/friendlygif.gif" alt="App example">
+				</article>
+				<article id="app_text">
+					<h3>Our awesome App</h3>
+					<p>With this App every single updated business in your city will be shown in your map. Save your favorites sites, share them with your friends and meet up all together.
+					</p>
+					<div id="platform_app">
+						<img src="./images/app_store.png"/>
+						<img src="./images/google_play.png"/>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11972.380949329128!2d2.1571327493513577!3d41.393738055515634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scarrer+eixample+barcelona!5e0!3m2!1ses!2ses!4v1412001352572" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+		</section>
+		<section id="form_sent">
+			<img src="./images/test.png"/>
+			<h3>Thanks for your registration</h3>
+		</section>
+		<section id="form" class="valign">
+			<div class="container">
+				<h3>Do you want to know more?</h3>
+				<input type="email" placeholder="Enter your e-mail">
+				<button id="form_button" type="submit">Send</button>
+			</div>
+		</section>
+		<section id="opinions" class="valign">
+			<div class="container">
+				<article id="first_opinion">
+					<img src="./images/womandog.jpg" alt="Mary">
+					<h4>Marie Cotillard</h4>
+					<p><em>“I’m so glad that Pet Friendly exist! I don’t have to leave Bob in the house or with some friends anymore. We can socialize with other users of the Pet Friendly community”</em></p>
+				</article>
+				<article id="second_opinion">
+					<img src="./images/mandog.jpg" alt="John">
+					<h4>César Rodríguez</h4>
+					<p><em>“A very useful tool to make happy both the animal and the owner. This application help my dog to interact with other people not being afraid of crowded places”</em></p>
+				</article>
+			</div>
+		</section>
+		<footer>
+			<span>© Pet friendly</span>
+			<ul class="menu_footer">
+				<li>Contact</li>
+				<li><i class="fa fa-twitter"></i></li>
+				<li><i class="fa fa-facebook"></i></li>
+			</ul>
+		</footer>
+		<script src="./js/jquery-1.11.1.js"></script>
+		<script src="./js/pet.js"></script>
+</body>
+</html>
